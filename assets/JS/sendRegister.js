@@ -12,7 +12,7 @@ form.addEventListener('submit', (e) => {
     let data = new FormData(form);
     // Check if the device is online
     if (navigator.onLine) {
-        fetch('https://script.google.com/macros/s/AKfycbwGrIPt_jIkRUSUOqLzAxf3yOhYwkVYiupBeSOV-pGoqlGX-h2LC5hMYNQyHa50vCcN/exec', {
+        fetch('https://script.google.com/macros/s/AKfycbw4vjmKjEZHvpUam9GcCoAutxETOKto_IQSxdNW8897hLW-ObyYyAlVISDl003fuIgpyA/exec', {
             method: "POST",
             body: data
         })
@@ -24,7 +24,7 @@ form.addEventListener('submit', (e) => {
                 sendResult.style.color = "#C62D42";
 
             } else {
-                sendResult.textContent = "VOTRE MESSAGE A ÉTÉ ENVOYÉ AVEC SUCCÈS";
+                sendResult.textContent = "Notre equipe va contacter vous au plus proche moment";
                 sendResult.style.color = "#09BC8A";
             }
         })

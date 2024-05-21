@@ -1035,3 +1035,8 @@ footer:hover + .upBtn{
     font-weight: 600;
     padding: 5px;
 }
+
+@media screen and (max-width:430px) {
+    body{display: none;}
+    
+}
