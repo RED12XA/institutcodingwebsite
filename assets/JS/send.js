@@ -4,7 +4,7 @@
 
 let sendResult =  document.querySelector('#sendResult');
 let form = document.querySelector("form");
-let submit
+
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -18,24 +18,21 @@ form.addEventListener('submit', (e) => {
         })
         .then(res => res.text())
         .then(data => {
-            console.log(data);
             if(data !== "Success") {
                 sendResult.textContent = "Quelque chose s'est mal passé. Veuillez réessayer";
                 sendResult.style.color = "#C62D42";
-
             } else {
                 sendResult.textContent = "VOTRE MESSAGE A ÉTÉ ENVOYÉ AVEC SUCCÈS";
                 sendResult.style.color = "#09BC8A";
             }
         })
+
         .catch(error => {
-            // Handle fetch errors
             console.error('Fetch Error:', error);
             sendResult.textContent = "Quelque chose s'est mal passé. Veuillez réessayer ou vérifier votre connexion Internet.";
             sendResult.style.color = "#C62D42";
         });
     } else {
-        // Handle offline scenario
         sendResult.textContent = "Vous semblez être hors ligne. Veuillez vérifier votre connexion Internet.";
         sendResult.style.color = "#C62D42";
     }

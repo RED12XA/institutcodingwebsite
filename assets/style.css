@@ -572,7 +572,9 @@ body:hover .contact-wtsp a{
 
 /* card style */
 
-
+.card-flex1 > h3{
+    white-space: pre;
+}
 .card-flex{
     display: flex;
     align-items: center;
