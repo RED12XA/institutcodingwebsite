@@ -24,11 +24,14 @@ form.addEventListener('submit', (e) => {
             } else {
                 sendResult.textContent = "VOTRE MESSAGE A ÉTÉ ENVOYÉ AVEC SUCCÈS";
                 sendResult.style.color = "#09BC8A";
+                let inputs = document.querySelectorAll(".clearInput");
+                for(let i = 0 ; i < inputs.length ; i++){
+                  inputs[i].value = "";
+                }
             }
         })
 
         .catch(error => {
-            console.error('Fetch Error:', error);
             sendResult.textContent = "Quelque chose s'est mal passé. Veuillez réessayer ou vérifier votre connexion Internet.";
             sendResult.style.color = "#C62D42";
         });

@@ -1,5 +1,4 @@
 
-
 let subContent = document.querySelector(".sub-content");
 let menuItem = document.querySelector(".menu-item-diplome-ma");
 let ulSubDropassistantMaster = document.querySelector(".sub-drop-assistant-webmaster")

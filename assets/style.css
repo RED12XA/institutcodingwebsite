@@ -1144,6 +1144,20 @@ footer:hover + .upBtn{
 
 
 @media screen and (max-width:430px) {
-    body{display: none;}
-    
+  .header1{
+    display: none;
+  }
+  .menu{
+    display: none;
+  }
+  #btnMenu{
+    margin-left: 10px;
+  }
+  #btnMenu i{
+    font-size: 42px;
+  }
+  .mobilebtn{
+    display: flex;
+    align-items: center;
+  }
 }
