@@ -1144,7 +1144,5 @@ footer:hover + .upBtn{
 
 
 @media screen and (max-width:430px) {
-  body{
-    display: none;
-  }
+
 }
