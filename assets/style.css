@@ -384,7 +384,11 @@ body{
     color: #134E9B;
 }
 .bg{
-    height: 100%;
+    width: 100vw;
+
+}
+.bg video{
+  width: 100%;
 }
 .programme h1 {
     text-transform: capitalize;
@@ -1144,5 +1148,5 @@ footer:hover + .upBtn{
 
 
 @media screen and (max-width:430px) {
-
+  
 }
