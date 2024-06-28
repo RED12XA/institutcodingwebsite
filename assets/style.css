@@ -1160,10 +1160,14 @@ footer:hover + .upBtn{
     margin-left: 2%;
   }
   .global-sec1 {
-    height: 100vh;
+    height: 100%;
   }
   .content > .content1 span{
     font-size: 28px;
     letter-spacing: 1px;
+  }
+  .content1 > .container p{
+    letter-spacing: 1px;
+    font-size: 22px;
   }
 }
