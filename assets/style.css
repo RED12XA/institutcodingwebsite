@@ -21,7 +21,9 @@
 body{
     overflow-x: hidden;
 }
-
+#hoverSelected:hover{
+  color: #E87920;
+}
 .global-header1et2 i{
     font-size: 24px;
 }
@@ -227,7 +229,7 @@ body{
 
 /* multihexa */
 #color{
-    color: #134E9B;
+    color: #66a5f7;
 }
 
 #btnRegister{
@@ -1063,6 +1065,7 @@ footer:hover + .upBtn{
     margin-left: 10px;
 
 }
+
 .container6 i{
     font-size: 30px;
     color: green;
@@ -1144,5 +1147,23 @@ footer:hover + .upBtn{
 
 
 @media screen and (max-width:430px) {
-  
+  .header1{
+    display: none;
+  }
+  .header2 > .menu,.header2 > .btn-register{
+    display: none;
+  }
+  .header2{
+    padding: 0;
+  }
+  .header2 > .logo-school{
+    margin-left: 2%;
+  }
+  .global-sec1 {
+    height: 100vh;
+  }
+  .content > .content1 span{
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
 }
