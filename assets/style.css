@@ -177,16 +177,13 @@ body{
 
 .global-sec1{
     position: relative;
-    height: 80vh;
+    height: 100vh;
     overflow: hidden;
 }
 .mini{
     height: 60vh;
 }
 .content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1147,6 +1144,9 @@ footer:hover + .upBtn{
 
 
 @media screen and (max-width:430px) {
+  body{
+    overflow: hidden;
+  }
   .header1{
     display: none;
   }
